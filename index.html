@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1 align="center"> Formularion de Datos</h1>
+  <section>
+    <form action="">
+      <div align="center">
+        <label for="nombre">Nombre</label><br>
+        <input id="nombre" type="text" required>
+      </div><br>
+
+      <div align="center">
+        <label for="apelllido">Apellido</label><br>
+        <input id="apellido" type="text" required>
+      </div><br>
+
+      <div align="center">
+        <label for="telefono">Teléfono</label><br>
+        <input id="telefono" type="numero" pattern="^[9|2|4|6]\d{8}$" required>
+      </div><br>
+
+      <div align="center">
+        <label for="cars" >Escoge tu carro para continuar</label><br><br>
+
+          <select required="">
+            <option value="" hidden>Elige tu carro</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+          </select >
+      </div><br><br><br>
+
+
+
+
+      <div align="center">
+        <label for="email">Email</label><br>
+        <input id="email" type="texto" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+       title="Este no parece un usuario válido" required>
+      </div><br>
+
+      <div align="center">
+
+        <label for="contraseña">Crea tu contraseña</label><br>
+        <input id="contraseña" type="password"
+         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+               title="Six or more characters" required>
+      </div><br>
+
+      <div align="center">
+        <button type="sumit">Enviar</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
